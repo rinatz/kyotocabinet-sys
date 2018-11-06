@@ -14,8 +14,8 @@ fn main() {
             return;
         }
 
-        let key = CString::new("foo").unwrap();
-        let val = CString::new("hop").unwrap();
+        let key = CString::new("key").unwrap();
+        let val = CString::new("val").unwrap();
 
         let ok = ffi::kcdbset(db, key.as_ptr(), 3, val.as_ptr(), 3);
 
@@ -24,8 +24,8 @@ fn main() {
             return;
         }
 
-        let mut size = 0usize;
-        let ptr = ffi::kcdbget(db, key.as_ptr(), 3, &mut size);
+        let mut len = 0usize;
+        let ptr = ffi::kcdbget(db, key.as_ptr(), 3, &mut len);
 
         println!("{:?}:{:?}", key, CStr::from_ptr(ptr));
 
