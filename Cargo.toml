@@ -1,0 +1,11 @@
+[package]
+name = "kyotocabinet-sys"
+version = "0.1.0"
+authors = ["Kenichiro IDA <ida.kenichiro@gmail.com>"]
+description = "Rust bindings for libkyotocabinet."
+repository = "https://github.com/rinatz/kyotocabinet-sys"
+readme = "README.md"
+license = "MIT"
+
+[build-dependencies]
+bindgen = "0.43.1"
