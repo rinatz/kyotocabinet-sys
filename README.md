@@ -1,3 +1,14 @@
 # kyotocabinet-sys
 
-Rust bindings for `libkyotocabinet`.
+`libkyotocabinet` bindings for Rust.
+
+## Cargo.toml
+
+```toml
+[dependencies]
+kyotocabinet-sys = "0.1.0"
+```
+
+## License
+
+MIT

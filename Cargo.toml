@@ -2,7 +2,7 @@
 name = "kyotocabinet-sys"
 version = "0.1.0"
 authors = ["Kenichiro IDA <ida.kenichiro@gmail.com>"]
-description = "Rust bindings for libkyotocabinet."
+description = "libkyotocabinet bindings for Rust."
 repository = "https://github.com/rinatz/kyotocabinet-sys"
 readme = "README.md"
 license = "MIT"
